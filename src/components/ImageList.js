@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function ImageList() {
+export default function ImageList({ images }) {
   return (
-    <div>ImageList</div>
+    <div>ImageList: {images.length}</div>
   )
 }

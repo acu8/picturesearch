@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function SearchBar({onSubmit}) {
   const [term, setTerm] = useState();
@@ -6,7 +6,7 @@ export default function SearchBar({onSubmit}) {
   const handleFormSubmit = (event) => {
     event.preventDefault();
 
-    onSubmit(event.target.value);
+    onSubmit(term);
   }
 
   const handleChange = (event) => {
